@@ -1,160 +1,172 @@
 <!doctype html>
-<html>
-<title> Joe's Drinks </title>
-<head>
+    <html>
+    <title> Joe's Drinks & Concoctions</title>
+    <head>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-<link rel="stylesheet" type="text/css" href="stylesss.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="stylesss.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<body>
+        <body>
 
- 
 
-   <div class="container">
-      <h1 class="logo"></h1>
-      <nav>
-        <ul>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Our History</a></li>
-          <li><a href="#">Bartending 101</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+
+         <div class="container">
+          <h1 class="logo"></h1>
+          <nav>
+            <ul>
+              <li><a href="#" onclick="page('index')">Menu</a></li>
+              <li><a href="#">Our History</a></li>
+              <li><a href="#" onclick="page('bartending')">Bartending 101</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
       </nav>
-    </div>
+  </div>
 </head>
 
- <img id="img1" class="videoban" onmouseover="setNewImage()" onmouseout="setOldImage()" src ="https://i.imgur.com/FKjcQO2.jpg"/></img>
+<img id="img1" class="videoban" onmouseover="setNewImage()" onmouseout="setOldImage()" src ="https://i.imgur.com/gmaArSp.jpg"/></img>
 
-  <h1 class="bart101"> DRINKS </h1>
-    <h4 class="info"> For additional information regarding our menu and how to mix our drinks at home, please select the drink relating to you quarry below and you will be navigated to detailed information page relating to the product </h4>
+<h1 class="bart101"> DRINKS </h1>
+<p class="info"> For additional information regarding our menu and how to mix our drinks at home, please select the drink relating to you quarry below and you will be navigated to detailed information page relating to the product </p>
 
 <div class="row">
 
   <!--   COLUMN ONE   -->
   <div class="column one">
       <h3> Mojito </h3>
-      <img class="picture" src="mojito_black.png" id="mojitoname"/> </img>
+    <img class="picture" src="https://i.imgur.com/xCclX2G.png"/></img>
+      <details>
+        <summary> Drink Description </summary>
+        <p>Mojito is a traditional Cuban highball. The cocktail often consists of five ingredients: white rum, sugar, lime juice, soda water, and mint. Its combination of sweetness, citrus, and herbaceous mint flavors is intended to complement the rum, and has made the mojito a popular summer drink. 
+</p>
+    </details>
+    <input type="button" value="More Information" id="mojitoButton" onclick="page('mojito')">
+    <br> 
+
+
+    <h3> Cosmopolitan </h3>
+    <img class="picture" src="https://i.imgur.com/HphVZ6V.png"/></img>
+    <details>
+        <summary> Drink Description </summary>
+        <p>lorem ipsum</p>
+    </details>
+    <input type="button" value="More Information">
+</div>
+
+<!--   COLUMN TWO   -->
+
+<div class="column two">
+    <h3 id="espressoname"> Espresso Martini</h3>
+    <img class="picture" src="https://i.imgur.com/Sc8wBmH.png"/></img>
+    <details>
+        <summary> Drink Description </summary>
+        <p>The espresso martini is a cold, coffee-flavored cocktail made with vodka, espresso coffee, and coffee liqueur. It is not a true martini as it contains neither gin nor vermouth, but is one of many drinks that incorporate the term into their names. </p>
+    </details>
+    <input type="button" value="More Information" id="martiniButton" onclick="page('espresso')">
+
+
+    <br>
+    <h3>Piña Colada</h3>
+    <img class="picture" src="https://i.imgur.com/wZms5Hn_d.webp?maxwidth=760&fidelity=grand"/> </img>
+    <details>
+        <summary> Drink Description </summary>
+        <p>lorem ipsum</p>
+    </details>
+    <input type="button" value="More Information">
+</div>
+
+<!--   COLUMN THREE   -->
+<div class="column three">
+  <h3 id="rumname"> Rum & Coke</h3>
+  <img class="picture" src="https://i.imgur.com/sSETMh3.png"/> </img>
   <details>
     <summary> Drink Description </summary>
-    <p>test here</p>
+    <p>Rum and Coke, or the Cuba libre, is a highball cocktail consisting of cola, rum, and in many recipes lime juice on ice. </p>
 </details>
-      <input type="button" value="More Information" id="mojitoButton" onclick="moreinfo('mojito')">
-    <br> 
-      <img class="picture" src="cosmo_black.png"/> </img>
-      <h3> Cosmopolitan </h3>
-      <input type="button" value="More Information">
-  </div>
+<input type="button" value="More Information" id="rumButton" onclick="page('rum')">
+<br>
+<h3> Mango Margarita</h3>
+<img class="picture" src="https://i.imgur.com/M6F3Hji.png"/> </img>
+<details>
+    <summary> Drink Description </summary>
+    <p>lorem ipsum</p>
+</details>
+<input type="button" value="More Information">
+</div>
 
-  <!--   COLUMN TWO   -->
-  <div class="column two">
-      <img class="picture" src="espresso_martini_black.png"/></img>
-      <h3 id="espressoname"> Espresso Martini</h3>
-      <input type="button" value="More Information" id="martiniButton">
-  <br>
-      <img class="picture" src="Pina_Colada_black.png"/> </img>
-      <h3>Piña Colada</h3>
-      <input type="button" value="More Information">
-  </div>
-
-  <!--   COLUMN THREE   -->
-  <div class="column three">
-      <img class="picture" src="Rum__Coke_black.png"/> </img>
-      <h3 id="rumname"> Rum & Coke</h3>
-      <input type="button" value="More Information" id="rumButton">
-  <br>
-
-      <img class="picture" src="Mango_Marg._black.png"/> </img>
-      <h3> Mango Margarita</h3>
-      <input type="button" value="More Information">
-  </div>
-
-  <br>
+<br>
 
 
 
 <div class="footer-dark">
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 item">
-                        <h1>Services</h1>
-                        <ul>
-                            <li><a href="#">Bartending</a></li>
-                            <li><a href="#">Tutorials</a></li>
-                            <li><a href="#">Events</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-3 item">
-                        <h1>About</h1>
-                        <ul>
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 item text">
-                        <h1>Joe's Drinks & Concoctions</h1>
-                            <input type="button" value="Sign up for our news letter!" id="signUp">
-                    </div>
-                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h1>Services</h1>
+                    <ul>
+                        <li><a href="#">Bartending</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
                 </div>
-                <p class="copyright">Joe's Drinks & Concoctions © 2018</p>
+                <div class="col-sm-6 col-md-3 item">
+                    <h1>About</h1>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h1>Joe's Drinks & Concoctions</h1>
+                    <input type="button" value="Sign up for our news letter!" id="signUp">
+                </div>
+                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
             </div>
-        </footer>
-    </div>
+            <p class="copyright">Joe's Drinks & Concoctions © 2018</p>
+        </div>
+    </footer>
+</div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js">
-      
-    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js">
+
+</script>
 
 
 
 <script>
     function setNewImage(){
-            document.getElementById("img1").src = "Home_Page_Banner_2.jpg";
-        }
+        document.getElementById("img1").src = "https://i.imgur.com/hHzMSQL.jpg";
+    }
 
-        function setOldImage(){
-            document.getElementById("img1").src = "Home_Page_Banner_1.jpg";
-        }
-
-
-    var mojitodescription=document.querySelector("#mojitoname");
-        mojitodescription.addEventListener("mouseover", description);
-        mojitodescription.addEventListener("mouseout",title);
+    function setOldImage(){
+        document.getElementById("img1").src = "https://i.imgur.com/gmaArSp.jpg";
+    }
 
 
-    function moreinfo(name){
+    function page(name){
       window.location.href=name+".html";
-    }
+  }
 
-    function description(){
-      mojitoname.textContent="some stuff about mojitos";
-
-    } 
-
-    function title(){
-      mojitoname.textContent="Mojito";
-    }
 
 //sign up email part 
-  var signup=document.querySelector("#signUp");
-      signup.addEventListener("click", SignUp);
+        var signup=document.querySelector("#signUp");
+            signup.addEventListener("click", SignUp);
 
     function SignUp(){
-      var userName = prompt("enter your email below!");
-    
-      if(userName=="bobbyjoe@gmail.com"){
-        alert("sign up successful");
-      }
-      else{
-        alert("invalid email");
-      }
+        var userName = prompt("enter your email below!");
+
+        if(userName=="bobbyjoe@gmail.com"){
+            alert("sign up successful");
+        }
+        else{
+            alert("invalid email");
+        }
     }
 
 </script>
