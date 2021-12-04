@@ -1,3 +1,101 @@
+
+
+body {
+	height: 100%;
+	margin: 0;
+	background: white;
+	font-family: sans-serif;
+	font-weight: 100;}
+
+.bart101{
+
+  text-align: left;
+  font-size: 50px;
+  padding-top: 15px;
+  padding-left: 100px;
+  position: relative;
+}
+
+
+h2 { 
+	border: 2px solid black;
+	background-color: #f5f5ef; 
+	padding-left: 30px;
+	font-family: 'Roboto Condensed', sans-serif;
+	}
+
+
+h3 {
+	padding-left: 30px;
+	text-decoration: underline;
+	font-family: 'Poppins', sans-serif;
+}
+
+h4 {
+	border: 2px ;
+	font-size: 25px;
+	padding-left: 30px;
+	font-family: 'Poppins', sans-serif;
+	}
+
+h5 {
+	padding-left: 5%;
+	text-decoration: underline;
+	font-size: 25px;
+	font-family: 'Poppins', sans-serif;
+	}
+
+#test1{
+margin: auto;
+padding-left: 50px;
+  }
+
+p, ul {
+	padding-left: 40px;
+	padding-right: 40px;
+	font-family: 'Barlow', sans-serif;
+	font-size: 20px;
+}
+
+ol {
+	padding-left: 10%;
+	padding-right: 10%;
+	line-height: 1.5;
+	font-size: 20px;
+	margin: auto;
+	font-family: 'Barlow', sans-serif;
+}
+
+
+.mojitoimg	{	
+		
+		margin-left: 10%;
+		margin-top: 7%;
+		padding: 10px; 
+		max-width: 80%;
+		height: auto;
+	}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+#tips{
+	padding-left: 50px;
+    font-style: italic;
+    font-family:'Zen Kaku Gothic Antique', sans-serif; 
+    font-size: 20px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 nav {
   float: center;
 
@@ -48,89 +146,6 @@ nav a::before {
 
 nav a:hover::before {
   width: 100%;
-}
-
-.videoban{
-  width: 100%;
-  object-fit:  cover;
-  object-position: center;
-  position: relative;
-}
-
-
-.bart101{
-
-  text-align: center;
-  font-size: 50px;
-  padding-top: 15px;
-}
-
-
-.info{
-  text-align: center;
-  padding-top: 15px;
-}
-
-
-body {
-  height: 100%;
-  margin: 0;
-  background: white;
-  font-family: sans-serif;
-  font-weight: 100;
-}
-
-iframe{
-  position: relative;
-  width:  100%;
-}
-.video-grid {
-  --gap: 100px;
-  --num-cols: 2;
-  --row-height: 600px;
-
-  box-sizing: border-box;
-  padding: var(--gap);
-
-  display: grid;
-  grid-template-columns: repeat(var(--num-cols), 1fr);
-  grid-auto-rows: var(--row-height);
-  gap: var(--gap);
-}
-
-.video-grid > .videoframe {
-  width: 100%;
-  height: 50%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.video-grid-col-2 {
-  grid-column: span 2;
-}
-
-.video-grid-row-2 {
-  grid-row: span 2;
-}
-
-h2 {color: black; 
-    text-align: center;
-    background-color: #f5f5ef; 
-    padding-left: 30px;
-    font-family: 'Roboto Condensed', sans-serif;
-    }
-
-h3 {color: black;
-    text-align: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    text-decoration: underline;
-    font-family: 'Poppins', sans-serif;
-}
-
-h4 {color: black;
-    padding-left: 30px;
-    font-family: 'Poppins', sans-serif;
 }
 
 /*-----footer-----*/
@@ -219,3 +234,4 @@ h4 {color: black;
   font-size:13px;
   margin-bottom:0;
 }
+
